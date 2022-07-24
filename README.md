@@ -1,3 +1,5 @@
+click to view https://olegskachko.github.io/beer-pages/#/
+
 In the project directory, you can run:
 
 ### `npm start`
