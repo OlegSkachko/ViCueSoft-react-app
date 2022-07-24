@@ -1,0 +1,79 @@
+$box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+
+.container-loader {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+.bokal {
+    position: relative;
+    width: 50px;
+    height: 127px;
+   }
+
+.beer-empty {
+    position:absolute;
+    width: 50px;
+    height: 110px;
+    background: url(./../../img/empty.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom:0;
+    left:0;
+   }
+
+.beer-full {
+    position:absolute;
+    background: url(./../../img/full.png) center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 0;
+    bottom:0;
+    left:0;
+    font-weight: bold;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 20px;
+    font-size: 0;
+    animation: beer 1s linear infinite alternate;
+   }
+   @keyframes beer {
+    0% {
+        height: 0px;
+       }
+    100% {
+     height: 127px;
+    }
+   }
+
+.notfound {
+    position: relative;
+    display: flex;
+    z-index: 2;
+    height: 80vh;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    filter: blur(0.5);
+}
+
+.notfound-info {
+    display: flex;
+    box-shadow: $box-shadow;
+    font-size: 38px;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);;
+}
+
+.span {
+    box-shadow: $box-shadow;
+}

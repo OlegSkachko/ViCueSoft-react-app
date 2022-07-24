@@ -1,0 +1,266 @@
+$backgroundColor:  rgba(255, 255, 255, 0.45);
+$box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-beer {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputWrapper {
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.beers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 60vh;
+    margin: 10px;
+    flex-direction: column;
+}
+
+.beers-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.beer {
+    position: relative;
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    min-width: 500px;
+    width: 60%;
+    height: 500px;
+    min-height: 70vh;
+    border: 2px solid black;
+    flex-direction: column;
+    background-color:  rgba(255, 255, 255, 0.7);
+    box-shadow: $box-shadow;
+}
+
+.beer-details {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid gray;
+    min-width: 400px;
+    max-width: 750px;
+}
+
+.title {
+    position: absolute;
+    font-size: 55px;
+    font-weight: bold;
+    align-self: start;
+    top: 25px;
+    left: 100px;
+}
+
+.tagline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 42;
+    font-weight: 800;
+    height: 50px;
+    width: 100%;
+    border-bottom: 2px solid gray;
+}
+
+.beer-description {
+    padding: 10px 50px 10px 30px;
+    border-bottom: 2px solid gray;
+    text-indent: 20px;
+}
+
+.beer-abv {
+    position: relative;
+    align-self: flex-start;
+    display: flex;
+    align-items: start;
+    margin-left: 10px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.text-food-pairing {
+    font-size: 50px;
+    border-bottom: 2px solid gray;
+}
+
+.food-pairing {
+    position: relative;
+    display: flex;
+    align-self: start;
+}
+
+.glass-beer {
+    position: relative;
+    margin: 10px;
+}
+
+.beercard {
+    position: relative;
+    text-decoration: none;
+    display: flex;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 300px;
+    max-width: 400px;
+    margin: 10px;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow:  $box-shadow;
+    transition-duration: 1s;
+    &:hover {
+        background: rgba(255, 255, 255, 0.95);
+        transform: scale(1.02);
+    }
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.pagesNumber {
+    position: relative;
+    max-height: 50px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.pageNumber {
+   border: 2px solid black;
+   padding: 10px;
+   margin: 2px;
+   background-color: $backgroundColor;
+   transition-duration: 1s;
+
+   &:hover {
+    background: rgba(255, 255, 255, 0.7);
+   }
+}
+
+.active {
+    background: rgba(255, 255, 255, 1);
+}
+
+.input-content {
+    display: flex;
+    position: relative;
+    height: 60px;
+}
+
+.xletter {
+    display: block;
+    position: absolute;
+    right: 1px;
+    transform: scale(0.5);
+}
+
+.description {
+    position: absolute;
+    height: 74px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    bottom: 0px;
+    padding: 5px;
+}
+
+.beer-name {
+    position: absolute;
+    text-shadow: 10px;
+    bottom: 98px;
+    font-weight: 900;
+}
+
+.img-beer {
+    position: absolute;
+    bottom: 116px;
+    width: 50px;
+}
+
+.to-back {
+    position: fixed;
+    margin: 10px;
+    bottom: 20px;
+}
+
+.card-page {
+    position: relative;
+}
+
+.page-input {
+    height: 60px;
+    width: 170px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.text-page {
+    position: absolute;
+    margin: 2px;
+    z-index: 3;
+}
+
+.button {
+    width: 300px;
+    font-size: 24px;
+    background-color: $backgroundColor;
+    transition-duration: 1s;
+    &:hover {
+        background: rgba(255, 255, 255, 0.85);
+    }
+}
+
+.chips {
+    position: absolute;
+    width: 500px;
+    right: -300px;
+}
+
+.beer-view {
+    position: absolute;
+    width: 200px;
+    left: -100px
+}
+
+img {
+    width: 50px;
+}
+
+input {
+    position: relative;
+    width: 400px;
+    font-size: 16px;
+    box-sizing: border-box;
+    &:active {
+        border: none;
+    }
+}
